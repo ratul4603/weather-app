@@ -125,8 +125,15 @@ form{
 
 @media screen and (max-width:578px){
     .main-container{
-        width:350px;
-        top:22%;
-        transform: translate(-50%, -22%);
+        width:380px;
+        top:16%;
+        transform: translate(-50%, -16%);
+    }
+    .min, .max{
+    font-size:20px;
+    }
+    #weather{
+    background:linear-gradient(rgb(95, 158, 160, .3),rgb(0, 0, 0, .5));
+    font-family: fantasy;
     }
 }
