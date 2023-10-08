@@ -1,0 +1,132 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#55A9F9;
+}
+.main-container{
+    width:400px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -30%);
+    padding:15px;
+}
+.container{
+    position:relative;
+}
+.circle-one, .circle-two{
+    background-color:rgb(255, 255, 255, .3);
+    position:absolute;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 5px rgb(255, 255, 255, .3);;
+}
+.circle-one{
+    width:120px;
+    height: 120px;
+    top:0%;
+    right: -5%;
+}
+.circle-two{
+    width:100px;
+    height: 100px;
+    bottom:-2%;
+    left: -4%;
+    z-index: -1;
+}
+.result{
+    background-color:rgb(255, 255, 255, .0001);
+    width:100%;
+    padding:15px;
+    border-radius: 3px;
+    box-shadow:5px 5px 35px rgb(0, 0, 0, .3);
+    color:white;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 0;
+}
+#input, #srch-btn{
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    font-size:15px;
+}
+#input{
+    width:70%;
+    padding:5px;
+    border-bottom:solid 1px white;
+    background-color: rgb(255, 255, 255, .3);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#srch-btn{
+    width:25%;
+    background-color: rgb(16, 94, 167);
+    color:white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.data-box{
+    text-align: center;
+}
+.data-name h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:15px 0 10px 0;
+}
+.data-name p{
+    font-size:16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.data-name img{
+    width:80px;
+}
+.data-name h5{
+    font-size:36px;
+    margin-top:-10px;
+    margin-bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.min-max{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px;
+}
+.min, .max{
+    margin:0 35px;
+    font-family:cursive;
+    font-size:16px;
+}
+.min-max p{
+    margin:1px 0;
+}
+.error{
+    color:black;
+    font-size: 22px;
+    font-family: monospace;
+    padding:15px 0;
+}
+#weather{
+    display:block;
+    width:50%;
+    margin:0 auto;
+    margin-top:15px;
+    margin-bottom: 10px;
+    padding:3px 0;
+    background:linear-gradient(rgb(95, 158, 160, .5),rgb(0, 0, 0, .8));
+    font-family: cursive;
+    color:wheat;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:578px){
+    .main-container{
+        width:350px;
+        top:22%;
+        transform: translate(-50%, -22%);
+    }
+}
